@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seungmin | Stray Kids</title>
+    <link rel="icon" href="images/skz-favicon.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <!-- Desktop Navigation -->
+        <nav id="desktop-nav">
+            <a href="index.html">HOME</a>
+            <a href="artistry.html">ARTISTRY</a>
+            <a href="xloewe.html">xLOEWE</a>
+            <a href="https://www.instagram.com/miniverse.___/" target="_blank"><img id="insta-logo" src="images/insta-logo.png" alt="Instagram Logo"></a>
+            <a id="wordmark" href="index.html">KIM<br><span>SEUNGMIN</span></a>
+        </nav>    
+        
+        <!-- Mobile/Tablet Navigation -->
+        <nav id="mobile-nav">
+            <button onclick="toggleMenu()"><img id="menu-logo" src="images/menu-icon.png" alt="Menu Icon"></button><br>
+            <a id="wordmark" href="index.html">KIM<br><span>SEUNGMIN</span></a>
+            <a class="link hide" href="index.html">HOME</a><br>
+            <a class="link hide" href="artistry.html">ARTISTRY</a><br>
+            <a class="link hide" href="xloewe.html">xLOEWE</a><br>
+            <a class="link hide" href="https://www.instagram.com/miniverse.___/" target="_blank"><img id="insta-logo" src="images/insta-logo.png" alt="Instagram Logo"></a>
+        </nav>
+
+        <video autoplay loop muted>
+            <source src="images/vid-home.mp4" type="video/mp4" alt="Seungmin Background Video">
+        </video>
+    </header>
+
+    <main>
+        <div id="intro">
+            <h2 class="center">STRAY <span class="red">K</span>ID'S VOCALIST</h2><br><br>
+            <p>He was introduced to baseball by his grand-father. He dreamed of becoming a baseball player so he worked hard for it but he had to stop because of an injury and other problems. Still, he liked singing ever since he was little. In the fourth grade of elementary school, he went to a nursery rhyme contest, won a prize, and joined a choir. In middle school, when he was thinking about what he should do to be happy in life, he thought about "music", so he studied and practiced singing to appeal to his parents.</p><br>
+            
+            <p>His individual picture and name were officially revealed by the company on October 13, 2017 at noon, for his participation in the upcoming survival show Stray Kids. He was introduced with the role "Vocal". On the final episode of the show on December 19, 2017, it was confirmed that Seungmin would debut in the boy group Stray Kids.</p><br>
+
+            <p>Seungmin is dedicated to the role of main vocalist, and eager to improve as he scouted for his own vocal coach. His voice is characterized by a warm timbre, which is often said to convey melancholy. In the recent years, he has shown his growth through is ability to reach high notes and have a powerful yet stable voice.</p>
+        </div>
+        
+        <div id="era-menu">
+            <h2 class="span-3-column">EXPLORE THE ERAS</h2>
+            <button onclick="showEra('rockstar')">ROCK-STAR</button>
+            <button onclick="showEra('5-star')">5-STAR</button>
+            <button onclick="showEra('maxident')">MAXIDENT</button>
+            <button onclick="showEra('oddinary')">ODDINARY</button>
+            <button onclick="showEra('noeasy')">NOEASY</button>
+            <button onclick="showEra('go-live')">GO LIVE</button>
+        </div>
+        
+        <div class="home-display rockstar">
+            <img class="span-2-row home" src="images/rock-star-1.webp" alt="Seungmin Rock Star Teaser">
+            <div class="album">
+                <h2>ROCK<span class="red">S</span>TAR</h2><br>
+                <p>Rock-Star is the eighth Korean-language extended play (thirteenth overall) by South Korean boy band Stray Kids, released on November 10, 2023, through JYP Entertainment and Republic Records, five months after their third studio album 5-Star (2023). Based on Korean four-character idiom of emotions huiroaerak, 3Racha, an in-house production team of the group, worked on the EP with Versachoi, Cubeatz, Willie Weeks, Millionboy, Nickko Young, and Jun2.</p>
+            </div>
+            <img class="home" src="images/rock-star-2.webp" alt="Seungmin Rock Star Teaser">
+        </div>
+
+        <div class="home-display 5-star hide">
+            <img class="home span-2-row" src="images/5-star-1.webp" alt="Seungmin 5-Star Teaser">
+            <div class="album">
+                <h2>5-<span class="red">S</span>TAR</h2><br>
+                <p>5-Star (stylized as ★★★★★) is the third Korean-language studio album (fourth overall) by South Korean boy band Stray Kids. It was released on June 2, 2023, through JYP Entertainment and Republic Records, following their seventh EP Maxident (2022). A combination of hip hop, pop, and electronica elements, 5-Star lyrically addresses themes of uniqueness, confidence, and aspirations.</p>
+            </div>
+            <img class="home" src="images/5-star-2.webp" alt="Seungmin 5-Star Teaser">
+        </div>
+
+        <div class="home-display maxident hide">
+            <img class="span-2-row home" src="images/maxident-1.webp" alt="Seungmin Maxident Teaser">
+            <div class="album">
+                <h2>MAXI<span class="red">D</span>ENT</h2><br>
+                <p>Rock-Star is the eighth Korean-language extended play (thirteenth overall) by South Korean boy band Stray Kids, released on November 10, 2023, through JYP Entertainment and Republic Records, five months after their third studio album 5-Star (2023). Based on Korean four-character idiom of emotions huiroaerak, 3Racha, an in-house production team of the group, worked on the EP with Versachoi, Cubeatz, Willie Weeks, Millionboy, Nickko Young, and Jun2.</p>
+            </div>
+            <img class="home" src="images/maxident-2.webp" alt="Seungmin Maxident Teaser">
+        </div>
+    
+        <div class="home-display oddinary hide">
+            <img class="span-2-row home" src="images/oddinary-1.webp" alt="Seungmin Oddinary Teaser">
+            <div class="album">
+                <h2>ODDI<span class="red">N</span>ARY</h2><br>
+                <p>Oddinary is the sixth extended play and ninth overall recorded by South Korean boy band Stray Kids. It was released on March 18, 2022, through JYP Entertainment and Republic Records, seven months after the band's second studio album Noeasy (2021). The EP is Stray Kids' first release on Republic Records, which they signed in February 2022. A blend of "odd" and "ordinary", Oddinary represents "all of us who have something odd about ourselves" and the concept "odd things will soon become ordinary".</p>
+            </div>
+            <img class="home" src="images/oddinary-2.webp" alt="Seungmin Oddinary Teaser">
+        </div>
+
+        <div class="home-display noeasy hide">
+            <img class="span-2-row home" src="images/noeasy-1.webp" alt="Seungmin NoEasy Teaser">
+            <div class="album">
+                <h2>NO<span class="red">E</span>ASY</h2><br>
+                <p>Noeasy is the second studio album by South Korean boy group Stray Kids. It was released on August 23, 2021, through JYP Entertainment, nine months after its predecessor the Japanese-language extended play (EP) All In (2020), and eleven months after the Korean reissue In Life (2020). The album's title is a wordplay on "noisy" and "no easy", and conveys the idea of the group making a loud impact on the world with their music.</p>
+            </div>
+            <img class="home" src="images/noeasy-2.webp" alt="Seungmin NoEasy Teaser">
+        </div>
+
+        <div class="home-display go-live hide">
+            <img class="span-2-row home" src="images/go-live-1.webp" alt="Seungmin GO LIVE Teaser">
+            <div class="album">
+                <h2>GO <span class="red">L</span>IVE</h2><br>
+                <p>Go Live (stylized in all caps) is the debut studio album by South Korean boy group Stray Kids. It was released by JYP Entertainment on June 17, 2020, and distributed through Dreamus. The lead single, "God's Menu", was released the same day. The reissue edition of the album, titled In Life (stylized in all caps) was released on September 14, 2020, along with eight new tracks, including lead single "Back Door".</p>
+            </div>
+            <img class="home" src="images/go-live-2.webp" alt="Seungmin GO LIVE Teaser">
+        </div>
+    </main>
+
+    <footer>
+        <img id="signature" src="images/signature.webp" alt="Seungmin's Signature">
+        <p class="center" id="copyright">Copyright © JYP ENTERTAINMENT Co., Ltd. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
