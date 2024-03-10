@@ -1,0 +1,713 @@
+html{
+    --red: rgb(192, 52, 28);
+    --blue: rgb(65, 236, 255);
+    --green: rgb(135, 204, 39);
+}
+
+header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    padding-top: 30px;
+}
+
+a{
+    color: white;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-size: 1.25em;
+    text-decoration: none;
+    padding: 3vw;
+}
+
+a:hover{
+    color: var(--red) !important; 
+}
+
+.blue:hover{
+    color: var(--blue) !important;
+}
+
+.green:hover{
+    color: var(--green) !important;
+}
+
+a:visited{
+    color: white;
+}
+
+#wordmark{
+    color: var(--red);
+    font-weight: 600;
+    letter-spacing: 7px;
+    display: block;
+    text-align: center;
+    padding: 60px;
+    margin-top: -90px;
+}
+
+#wordmark span{
+    color: white;
+    font-size: 1.7em;
+}
+
+#blue-wordmark{
+    color: var(--blue);
+    font-weight: 600;
+    letter-spacing: 7px;
+    display: block;
+    text-align: center;
+    padding: 60px;
+    margin-top: -90px;
+}
+
+#blue-wordmark span{
+    color: white;
+    font-size: 1.7em;
+}
+
+#green-wordmark{
+    color: var(--green);
+    font-weight: 600;
+    letter-spacing: 7px;
+    display: block;
+    text-align: center;
+    padding: 60px;
+    margin-top: -90px;
+}
+
+#green-wordmark span{
+    color: white;
+    font-size: 1.7em;
+}
+
+#insta-logo{
+    width: 1em;
+    float: right;
+    padding-right: 50px;
+}
+
+/* Mobile/Tablet Header */
+#menu-logo{
+    display: none;
+}
+
+#mobile-nav{
+    display: none;
+}
+
+/* Header Background */
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+
+#banner{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top:0;
+    z-index:-1;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Intro Text */
+#intro{
+    padding: 100px 15vw 100px 15vw;
+}
+
+/* Homepage Image Display Menu */
+#era-menu{
+    color: white;
+    background-color: black;
+    padding: 4vw;
+    
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 4vw;
+    row-gap: 25px;
+}
+
+button {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 1.5em;
+
+    color: white;
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+button:hover{
+    color: var(--red);
+}
+
+/* Homepage Image Display */
+.home-display{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 4vw;
+    padding: 4vw;
+}
+
+.home-display img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.span-2-row{
+    grid-row: span 2;
+}
+
+.span-3-column{
+    grid-column: span 3;
+}
+
+.album{
+    padding: 2vw;
+    text-align: right;
+}
+
+.hide{
+    display: none;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Artistry Discography */
+#discography{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 10px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.album-cover{
+    padding: 2vw;
+}
+
+.album-cover img{
+    max-width: 300px;
+}
+
+.album-cover a{
+    padding: 0;
+}
+
+.album-cover a:hover{
+    opacity: 60%;
+}
+
+.album-cover span{
+    float: right;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* xLOEWE */
+#intro-banner{
+    width: 50vw;
+    height: 600px;
+    margin-left: 4vw;
+    background-image: url('/images/loewe-1.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: fit;
+}
+
+#loewe-intro{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 100px;
+}
+
+#loewe-intro h2{
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    margin-top: 30px;
+    margin-left: -200px;
+    padding: 10px;
+    width: 40vw;
+}
+
+#loewe-intro p{
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    margin-left: -200px;
+    padding: 10px;
+    width: 40vw;
+}
+
+/* Loewe Gallery Display */
+#gallery{
+    display: grid;
+    grid-template-columns: 1.25fr 1fr;
+    column-gap: 2vw;
+    row-gap: 30px;
+    padding: 4vw;
+    margin-top: 25%;
+}
+
+#gallery :nth-child(2){
+    grid-row: span 2;
+}
+
+#gallery img{
+    margin: 0px 60px 0px;
+    width: 100%;
+    grid-row: span 2;
+    border: 20px solid white;
+}
+
+#gallery-parallax{
+    width: 50vw;
+    height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: fit;
+    background-position: right;
+    background-image: url('/images/loewe-2.jpg');
+    z-index: -1;
+}
+
+#gallery h2{
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    padding: 10px;
+    margin: 30px -100px 0px 80px;
+}
+
+#gallery p{
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    padding: 10px;
+    margin: 0px -100px 0px 80px;
+}
+
+#gallery-mobile{
+    display: none;
+}
+
+/* Promo Styling */
+#promo-banner{
+    width: 50vw;
+    height: 600px;
+    margin-left: 4vw;
+    background-image: url('/images/loewe-4.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: fit;
+}
+
+#loewe-promo{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 25%;
+    margin-bottom: 25%;
+}
+
+#loewe-promo h2{
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    margin-top: 30px;
+    margin-left: -200px;
+    padding: 10px;
+    width: 40vw;
+}
+
+#loewe-promo p{
+    color: white;
+    background-color: rgba(0,0,0,0.7);
+    margin-left: -200px;
+    padding: 10px;
+    width: 40vw;
+}
+
+/* Livestream */
+iframe{
+    width: 1120px;
+    height: 630px; 
+}
+
+#stream{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+#stream h2{
+    margin-bottom: 30px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Misc */
+h2{
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 3em;
+}
+
+h3{
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-size: 2.5em;
+}
+
+.red{
+    color: var(--red);
+}
+
+.center{
+    text-align: center;
+}
+
+.right{
+    text-align: right;
+}
+
+p{
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Footer Styling */
+footer{
+    padding: 1vw 0vw 1vw 0vw;
+    clear: both;
+}
+
+#signature{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 75px;
+}
+
+#copyright{
+    padding-top: 20px;
+    font-size: 0.8em;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Responsive Design */
+@media screen and (max-width: 1250px){
+    /* Navigation Bar */
+    #desktop-nav{
+        display: none;
+    }
+
+    a{
+        padding-right: 50px;
+        line-height: 60px;
+    }
+
+    #discography a{
+        line-height: 0px;
+    }
+
+    #mobile-nav{
+        display: block;
+        font-size: 1.25em;
+        text-align: right;
+    }
+
+    #wordmark{
+        padding: 20px;
+        margin-top: -70px;
+        line-height: 30px;
+    }
+
+    #blue-wordmark{
+        padding: 20px;
+        margin-top: -80px;
+        line-height: 30px;
+    }
+
+    #green-wordmark{
+        padding: 20px;
+        margin-top: -80px;
+        line-height: 30px;
+    }
+    
+    #menu-logo{
+        display: block;
+        width: 0.8em;
+        padding-right: 50px;
+    }
+
+    #insta-logo{
+        padding-top: 20px;
+        width: 1em;
+    }
+
+    /* xLOEWE Display */
+    /* Intro */
+    #intro-banner{
+        width: 70vw;
+        height: 500px;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url('/images/loewe-1.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: fit;
+        background-position: center;
+
+    }
+    
+    #loewe-intro{
+        display: grid;
+        grid-template-columns: auto;
+        margin-top: 100px;
+        justify-content: center;
+    }
+    
+    #loewe-intro h2{
+        color: white;
+        background-color: rgba(0,0,0,0.7);
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        width: 70vw;
+    }
+    
+    #loewe-intro p{
+        color: white;
+        background-color: rgba(0,0,0,0.7);
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        width: 70vw;
+    }
+
+    /* Mobile Gallery */
+    #gallery{
+        display: none;
+    }
+
+    #gallery-mobile{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+
+    #gallery-parallax{
+        width: 70vw;
+        height: 500px;
+        padding: 10px;
+        margin-top: 25%;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url('/images/loewe-2.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: fit;
+        background-position: center;
+    }
+
+    #gallery-mobile img{
+        margin: 0px auto 0px auto;
+        width: 70vw;
+        object-fit: fill;
+    }
+    
+    #gallery-mobile h2{
+        color: white;
+        background-color: rgba(0,0,0,0.7);
+        width: 70vw;
+        padding: 10px;
+        margin: 0px auto 0px auto;
+    }
+    
+    #gallery-mobile p{
+        color: white;
+        background-color: rgba(0,0,0,0.7);
+        width: 70vw;
+        padding: 10px;
+        margin: 0px auto 0px auto;
+    }
+
+    /* Promo */
+    #promo-banner{
+        width: 70vw;
+        height: 500px;
+        margin-top: 25%;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url('/images/loewe-4-mobile.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: fit;
+        background-position: center;
+    }
+    
+    #loewe-promo{
+        display: grid;
+        grid-template-columns: auto;
+        margin-top: 100px;
+        justify-content: center;
+    }
+    
+    #loewe-promo h2{
+        color: white;
+        background-color: rgba(0,0,0,0.7);
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        width: 70vw;
+    }
+    
+    #loewe-promo p{
+        color: white;
+        background-color: rgba(0,0,0,0.7);
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        width: 70vw;
+    }
+
+    /* Livestream */
+    iframe{
+        width: 840px;
+        height: 472.5px; 
+    }
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* For Artistry grid layout and xLOEWE */
+@media screen and (max-width: 1050px){
+    #discography{
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 10px;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    #discography .span-3-column{
+        grid-column: span 2;
+    }
+
+    #discography :nth-child(5){ /* Novel Cover */
+        grid-column: span 2;
+    }
+
+    #discography :nth-child(9){ /* Waiting For Us Cover */
+        grid-column: span 2;
+    }
+
+    /* Livestream */
+    iframe{
+        width: 600px;
+        height: 337.5px; 
+    }
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* When the homepage grid starts getting very scuffed */
+@media screen and (max-width: 700px){
+    .home-display{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    .album{
+        text-align: center;
+    }
+
+    button{
+        font-size: 1.25em;
+    }
+
+    #menu-logo{
+        display: block;
+        width: 0.5em;
+        padding-right: 20px;
+        font-size: 2em;
+    }
+
+    a{
+        font-size: 1em;
+        padding-right: 20px;
+        line-height: 60px;
+    }
+
+    #insta-logo{
+        padding-top: 20px;
+        padding-right: 20px;
+        width: 1em;
+    }
+    
+    /* Artistry Page */
+    #discography{
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 10px;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    #discography .span-3-column{
+        grid-column: span 1;
+    }
+    
+    #discography :nth-child(5){ /* Novel Cover */
+        grid-column: span 1;
+    }
+
+    #discography :nth-child(9){ /* Waiting For Us Cover */
+        grid-column: span 1;
+    }
+
+    /* xLOEWE */
+    #promo-banner{
+        background-image: url('/images/loewe-4-mobile-700.jpg');
+    }
+
+    /* Misc */
+    h2{
+        font-size: 2.5em;
+    }
+    
+    p{
+        font-size: 0.8em;
+        line-height: 20px;
+    }
+
+    #discography p{
+        font-size: 1em;
+        line-height: 20px;
+    }
+}
+
+/* To adjust video size on xLOEWE page */
+@media screen and (max-width: 600px){
+    /* Livestream */
+    iframe{
+        width: 350px;
+        height: 197px; 
+    }
+}
