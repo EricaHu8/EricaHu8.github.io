@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seungmin | Loewe</title>
+    <link rel="icon" href="images/skz-favicon.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <!-- Desktop Navigation -->
+        <nav id="desktop-nav">
+            <a class="green" href="index.html">HOME</a>
+            <a class="green" href="artistry.html">ARTISTRY</a>
+            <a class="green" href="xloewe.html">xLOEWE</a>
+            <a href="https://www.instagram.com/miniverse.___/" target="_blank"><img id="insta-logo" src="images/insta-logo.png" alt="Instagram Logo"></a>
+            <a id="green-wordmark" class="green" href="index.html">KIM<br><span>SEUNGMIN</span></a>
+        </nav>    
+        
+        <!-- Mobile/Tablet Navigation -->
+        <nav id="mobile-nav">
+            <button onclick="toggleMenu()"><img id="menu-logo" src="images/menu-icon.png" alt="Menu Icon"></button><br>
+            <a id="green-wordmark" class="green" href="index.html">KIM<br><span>SEUNGMIN</span></a>
+            <a class="link green hide" href="index.html">HOME</a><br>
+            <a class="link green hide" href="artistry.html">ARTISTRY</a><br>
+            <a class="link green hide" href="xloewe.html">xLOEWE</a><br>
+            <a class="link hide" href="https://www.instagram.com/miniverse.___/" target="_blank"><img id="insta-logo" src="images/insta-logo.png" alt="Instagram Logo"></a>
+        </nav>
+
+        <video autoplay loop muted>
+            <source src="images/vid-loewe.mp4" type="video/mp4" alt="Seungmin x Loewe Video">
+        </video>
+    </header>
+
+    <main>
+        <!-- All text used in this website is credited towards Teen Vogue -->
+        <div id="loewe-intro">
+            <div id="intro-banner">
+                <!-- Empty div for parallax scrolling (CSS background img) -->
+            </div>
+            <div>
+                <h2>LOEWE WINTER 2024</h2>
+                <p>On Friday morning, Loewe's guests were invited to a maze-like gallery space, awash in three shades of green, for the brand's autumn/winter 2024 show at Paris Fashion Week. Some were filmed arriving in old cars, a display of a contemporary fashion show's pomp and circumstance. Dotting the walls were small landscape and still-life paintings by the late American artist Albert York, depicting everyday objects, landscapes, and portraits, like flowers in a vase or a woman sitting in a chair.</p>
+            </div>
+        </div>
+
+        <!-- Desktop Gallery -->
+        <div id="gallery">
+            <div>
+                <h2 class="right">SEUNGMIN x LOEWE</h2>
+                <p class="right">Seungmin arrived at the Spanish design house's show in a statement piece and a statement color. He wore a fuzzy neon green button-down top, adorned with a giant bow at the neckline. He cuffed the sleeves and French tucked the hemline as well. To complete the look, he opted for a pair of simple baggy blue jeans, a black belt, and lilac sneakers. The “Megaverse” singer kept it minimal in the beauty department. He wore his jet black hair down with his bangs slightly tousled. He also skipped the jewelry, opting to let the outfit speak for itself.</p>
+            </div>
+            <div id="gallery-parallax"></div>
+            <img src="images/loewe-3.jpg" alt="Seungmin Loewe Photoshoot by WKorea">
+        </div>
+
+        <!-- Mobile Gallery -->
+        <div id="gallery-mobile">
+            <div id="gallery-parallax"></div>
+            <div>
+                <h2>SEUNGMIN x LOEWE</h2>
+                <p>Seungmin arrived at the Spanish design house's show in a statement piece and a statement color. He wore a fuzzy neon green button-down top, adorned with a giant bow at the neckline. He cuffed the sleeves and French tucked the hemline as well. To complete the look, he opted for a pair of simple baggy blue jeans, a black belt, and lilac sneakers. The “Megaverse” singer kept it minimal in the beauty department. He wore his jet black hair down with his bangs slightly tousled. He also skipped the jewelry, opting to let the outfit speak for itself.</p>
+            </div>
+            <img src="images/loewe-3.jpg" alt="Seungmin Loewe Photoshoot by WKorea">
+        </div>
+
+
+        <!-- JYP Fashion Week -->
+        <div id="loewe-promo">
+            <div id="promo-banner">
+                <!-- Empty div for parallax scrolling (CSS background img) -->
+            </div>
+            <div>
+                <h2>JYP FASHION WEEK</h2>
+                <p>This recent appearance may seem to indicate a lasting relationship between Loewe and JYP Entertainment, the company that represents Seungmin and Stray Kids. Some might recall that the JYP girl group NMIXX became brand ambassadors for Loewe back in 2022, making this just the latest collaboration between the two powerhouses.</p>
+                <p>Many other JYP talents have also attended major fashion shows this season. Stray Kids’s very own Hyunjin went to the Versace fall-winter 2024 show at Milan Fashion Week, honoring his role as a global brand ambassador for the Italian luxury fashion house. Stray Kids’s labelmates Yeji, Ryujin, Chaeryeong, and Yuna of ITZY also attended Paris Fashion Week for the Courrèges fall-winter 2024/2025 show — though their other group mate Lia was not present as she is currently on hiatus.</p>
+            </div>
+        </div>
+
+        <div id="stream">
+            <h2 class="center">WATCH NOW</h2>
+            <iframe src="https://www.youtube.com/embed/coYfJZMYEWU?si=tPNVs96uO2xeVmSM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </main>
+    
+    <footer>
+        <img id="signature" src="images/signature.webp" alt="Seungmin's Signature">
+        <p class="center" id="copyright">Copyright © JYP ENTERTAINMENT Co., Ltd. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
