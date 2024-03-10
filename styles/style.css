@@ -222,7 +222,7 @@ button:hover{
     width: 50vw;
     height: 600px;
     margin-left: 4vw;
-    background-image: url("../images/loewe-1.jpg");
+    background-image: url(images/loewe-1.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: fit;
